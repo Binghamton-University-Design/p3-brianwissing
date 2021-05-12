@@ -9,6 +9,13 @@ body {
 
 }
 
+h1 {
+	text-align: center;
+	font-weight: 0,600;
+	margin-bottom: 1em;
+	font-size: 80pt;
+}
+
 .wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -39,4 +46,123 @@ body {
 	color: black;
 	font-weight: 700;
 }
+
+/* Slider */
+
+* {box-sizing: border-box;}
+
+.slideshow-container {
+	justify-content: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+.slides {
+	display: inline-block;
+	justify-content: center;
+}
+
+.slides img {
+	width: 60%;
+	margin: auto;
+	display: block;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2.5s;
+	animation-name: fade;
+	animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .5}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .5}
+	to {opacity: 1}
+}
+
+
+
+#wrapper {
+	margin: 2em auto;
+	max-width: 1200px;
+}
+
+#main {
+	background: white;
+	margin: 2em;
+	padding: 2em;
+}
+
+
+#content {
+	margin-bottom: 2em;
+	margin-right: 2em;
+	margin-left: 2em;
+	margin-top: 0em;
+}
+
+#content .grid-item {
+	position: relative;
+	color: black;
+}
+#content .grid-item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+}
+
+h3 {
+	color: white;
+}
+
+#content .grid-item .overlay {
+	transition: opacity .5s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	background: rgba(0,0,0,0.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#content .grid-item:hover .overlay {
+	opacity: 1;
+}
+
+#content .grid-item .overlay .project-title h3 {
+	margin-bottom: 0;
+
+}
+
+#contentprof img {
+	width: 100%;
+	height: auto;
+	margin-top: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
